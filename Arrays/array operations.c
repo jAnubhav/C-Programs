@@ -61,7 +61,7 @@ int main()
     for (i = 0; i < size; i++)
     {
         printf("Enter element %d : ", i + 1);
-        scanf("%d", (arr + i));
+        scanf("%d", arr + i);
     }
 
     while (flag)
