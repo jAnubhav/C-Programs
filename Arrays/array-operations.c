@@ -11,16 +11,22 @@ void insertElement()
         printf("\nEnter Position : ");
         scanf("%d", &pos);
         if (pos < size)
+        {
             break;
+        }
         else
+        {
             printf("\nPosition cannot be greater than size.\n");
+        }
     }
 
     printf("\nEnter Element : ");
     scanf("%d", &elem);
 
     for (i = size++; i > pos; i--)
+    {
         arr[i] = arr[i - 1];
+    }
     arr[pos] = elem;
 
     printf("\nElement Inserted Successfully.\n");
@@ -49,7 +55,9 @@ void displayAll()
 {
     printf("\nThe elements of the array are : ");
     for (i = 0; i < size; i++)
+    {
         printf("%d ", arr[i]);
+    }
 }
 
 int main()
@@ -61,7 +69,7 @@ int main()
     for (i = 0; i < size; i++)
     {
         printf("Enter element %d : ", i + 1);
-        scanf("%d", arr + i);
+        scanf("%d", (arr + i));
     }
 
     while (flag)
