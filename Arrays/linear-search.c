@@ -35,7 +35,7 @@ int main()
     }
     else
     {
-        printf("\nElement Found at %d Index", pos);
+        printf("\nElement Found at index %d", pos);
     }
 
     return 0;
