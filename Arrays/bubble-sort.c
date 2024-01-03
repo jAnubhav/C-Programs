@@ -4,7 +4,7 @@ int arr[100], size, i;
 
 void bubbleSort(int arr[])
 {
-    int j, temp;
+    int j, temp, swap = 0;
     for (i = 0; i < size - 1; i++)
     {
         for (j = 0; j < size - i - 1; j++)
@@ -14,7 +14,12 @@ void bubbleSort(int arr[])
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
+                swap = 1;
             }
+        }
+        if (swap == 1)
+        {
+            break;
         }
     }
 }
