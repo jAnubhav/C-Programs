@@ -2,7 +2,7 @@
 
 int arr[100], size, i;
 
-void bubbleSort(int arr[])
+void bubbleSort()
 {
     int j, temp, swap = 0;
     for (i = 0; i < size - 1; i++)
@@ -46,7 +46,7 @@ int main()
     printf("\nThe elements of array before sorting are : ");
     displayAll();
 
-    bubbleSort(arr);
+    bubbleSort();
 
     printf("\nThe elements of array after sorting are : ");
     displayAll();
